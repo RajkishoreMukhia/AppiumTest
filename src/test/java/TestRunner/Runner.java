@@ -9,7 +9,7 @@ import io.cucumber.testng.CucumberOptions;
 		features = "./src/test/java/FeaturesFiles",
 		glue = {"StepDefination"},
 		monochrome = true,
-		tags = "@smoke"
+		tags = "@dis"
 
 )
 
