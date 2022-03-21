@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="6" passed="5" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-03-21T08:55:41Z" name="Default suite" finished-at="2022-03-21T08:59:42Z" duration-ms="241094">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner.Runner@125290e5]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2022-03-21T08:55:41Z" name="Default test" finished-at="2022-03-21T08:59:42Z" duration-ms="241094">
+      <class name="TestRunner.Runner">
+        <test-method is-config="true" signature="setUpClass()[pri:0, instance:TestRunner.Runner@125290e5]" started-at="2022-03-21T08:55:41Z" name="setUpClass" finished-at="2022-03-21T08:55:43Z" duration-ms="1464" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner.Runner@125290e5]" started-at="2022-03-21T08:55:43Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-03-21T08:56:16Z" duration-ms="33145" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Display Show Button Option"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Check Display Feature in App Tab]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner.Runner@125290e5]" started-at="2022-03-21T08:56:16Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-03-21T08:56:50Z" duration-ms="34049" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Display Show Button Option"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Check Display Feature in App Tab]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner.Runner@125290e5]" started-at="2022-03-21T08:56:50Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-03-21T08:57:29Z" duration-ms="38817" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Display Show Button Option"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Check Display Feature in App Tab]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner.Runner@125290e5]" started-at="2022-03-21T08:57:29Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-03-21T08:58:15Z" duration-ms="45758" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Animation Hide Btn"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Check animation feature Hide Show Button]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner.Runner@125290e5]" started-at="2022-03-21T08:58:15Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-03-21T08:58:55Z" duration-ms="40514" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Animatioon Show Btn"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Check animation feature Hide Show Button]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner.Runner@125290e5]" started-at="2022-03-21T08:58:55Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-03-21T08:59:42Z" duration-ms="46447" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Reversing animation btn check"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Check Animaton Feature Reversing]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [false] but found [true]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [false] but found [true]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:568)
+at org.testng.Assert.assertEquals(Assert.java:578)
+at StepDefination.Reversing.the_item_goes_same_place(Reversing.java:47)
+at ✽.The item goes same place(file:///C:/Users/rajkishoremukhia/git/AppiumExitTest/AppiumExitTest/./src/test/java/FeaturesFiles/reversing.feature:11)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:TestRunner.Runner@125290e5]" started-at="2022-03-21T08:59:42Z" name="tearDownClass" finished-at="2022-03-21T08:59:42Z" duration-ms="820" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- TestRunner.Runner -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
