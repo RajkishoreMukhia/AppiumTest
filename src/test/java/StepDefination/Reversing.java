@@ -11,8 +11,10 @@ import io.cucumber.java.en.When;
 
 public class Reversing extends BaseClass {
 	
+	// object of logger
 	Loger log = new Loger("Resvers_Screen");
 	
+	// object of Reversing_Screens
 	Reversing_Screen res;
 
 	@Then("^Click on Reversing Tab$")
@@ -43,14 +45,16 @@ public class Reversing extends BaseClass {
 	@Then("^The item goes same place$")
 	public void the_item_goes_same_place() throws Throwable {
 		boolean isEnable = res.revers_btn.isEnabled();
+		
+		//Assertion for validate the test
 		if(isEnable == true) {
 			Assert.assertEquals(isEnable, false);
 			log.loger.info("Assertion is pass succsessfully");
 			
-			
 		}
 		else {
 			
+			log.loger.info("Assertion is Fail");
 			stopDriver();
 		}
 		

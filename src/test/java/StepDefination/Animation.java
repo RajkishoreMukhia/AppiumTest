@@ -11,8 +11,10 @@ import io.cucumber.java.en.When;
 
 public class Animation extends BaseClass{
 	
+	// object of logger
 	Loger log = new Loger("Animation Screen");
 	
+	// object of Animatio_screen
 	Animation_Screen ani;
 	
 
@@ -49,6 +51,7 @@ public class Animation extends BaseClass{
 	public void numbers_btn_are_hide() throws Throwable {
 		log.loger.info("Number btn are hide");
 	
+		//Assertion for validate the test
 		if(ani.hide_button0.getText() == "1") {
 			Assert.assertEquals(ani.hide_button0.getText(), "1");
 			log.loger.info("Assertion is pass Succsessfully");
@@ -58,8 +61,6 @@ public class Animation extends BaseClass{
 			log.loger.info("Assertion is Fail");
 			stopDriver();
 		}
-		
-		
 	}
 	
 	@When("^Click on Show Btn$")
@@ -77,8 +78,7 @@ public class Animation extends BaseClass{
 		//Assertion for validate the test
 		if(ani.hide_button0.getText() == "0") {
 			
-//			Assert.assertEquals(ani.hide_button0.getText(), "0");
-			Assert.assertTrue(true);
+			Assert.assertEquals(ani.hide_button0.getText(), "0");
 			log.loger.info("Assertion is pass Succsessfully");
 		}
 		else {
@@ -86,6 +86,7 @@ public class Animation extends BaseClass{
 			stopDriver();
 		}
 		
+		//Stop the draiver
 		stopDriver();
 
 	}

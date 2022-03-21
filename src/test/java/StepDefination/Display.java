@@ -11,8 +11,10 @@ import io.cucumber.java.en.When;
 
 
 public class Display extends BaseClass {
-	
+	// object of logger
 	Loger log = new Loger("Display");
+	
+	// object of Display_Screen
 	Display_Screen dis ;
 	
 
@@ -43,15 +45,18 @@ public class Display extends BaseClass {
 		Thread.sleep(2000);
 		
 		boolean isShow = dis.ShowHomeImg.isDisplayed();
+		
+		//Assertion for validate the test
 		if(isShow == true) {
 			Assert.assertEquals(isShow, true);
 			log.loger.info("Assertion Show Home Logo apper successfully");
 		}
 		else {
+			log.loger.info("Assertion is Fail");
 			stopDriver();
 		}
 
-		
+		//Stop the Driver
 		stopDriver();
 	}
 
@@ -66,16 +71,16 @@ public class Display extends BaseClass {
 		
 		String isShow = dis.ShowTitle.getText();
 		
+		//Assertion for validate the test
 		if(isShow == null) {
 			Assert.assertEquals(isShow, null);
 			log.loger.info("Assertion Show Title hide pass successfully");
 		}
 		else {
+			log.loger.info("Assertion is Fail");
 			stopDriver();
 		}
-		
-		
-		
+		//Stop the Driver
 		stopDriver();
 	}
 
@@ -89,14 +94,17 @@ public class Display extends BaseClass {
 		Thread.sleep(2000);
 	
 		boolean isShow = dis.ShowCustom.isDisplayed();
+		
+		//Assertion for validate the test
 		if(isShow == true) {
 			Assert.assertEquals(isShow, true);
 			log.loger.info("Assertion Show Custom view pass successfully");
 		}
 		else {
+			log.loger.info("Assertion is Fail");
 			stopDriver();
 		}
-		
+		//Stop the Driver
 		stopDriver();
 	}
 }
